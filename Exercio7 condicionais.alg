@@ -1,3 +1,5 @@
+-----ESTOU COM DUVIDA-------
+
 algoritmo "semnome"
 
 var

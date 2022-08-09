@@ -1,20 +1,22 @@
------ESTOU COM DUVIDA-------
-
 algoritmo "semnome"
-
 var
- salario,renda: logico
+saque,saldoatual,saldofinal,sobra,limite: real
 inicio
-escreval("Qual seu salraio")
-leia(salario)
+escreval("Saque o dinheiro e veja o o seu saldo")
 
- se(salario < = 1903.98)entao
-   renda <- 0
-   fimse
+saldoatual <-1000
+limite<-2000
+escreval("Quantos reais deseja sacar?")
+leia(saque)
 
- se((salrio> = 1903.99) e (salrio <= 2826.65)) entao
-    renda <- salario vezes 0.075
-   fimse
- 
- escreval("O desconto na sua folha de pagamento sera de: R$", renda)
+saldofinal<-saldoatual-saque
+se (saldofinal > 0) entao
+   escreval("Seu saldo final é positivo com: R$" , saldofinal)
+fimse
+
+se (saldofinal<0) e (saldofinal>(-limite)) entao
+    escreval("Seu saldo final é negativo com: R$" , saldofinal)
+senao
+    escreval("Voce não tem o limite suficiente, seu limite é de R$" ,limite)
+fimse
 fimalgoritmo

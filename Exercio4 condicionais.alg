@@ -11,12 +11,12 @@ leia(saque)
 
 saldofinal<-saldoatual-saque
 se (saldofinal > 0) entao
-   escreval("Seu saldo final È positivo com: R$" , saldofinal)
+   escreval("Seu saldo final √© positivo com: R$" , saldofinal)
 fimse
 
 se (saldofinal<0) e (saldofinal>(-limite)) entao
-    escreval("Seu saldo final È negativo com: R$" , saldofinal)
+    escreval("Seu saldo final √© negativo com: R$" , saldofinal)
 senao
-    escreval("Voce n„o tem o limite suficiente, seu limite È de R$" ,limite)
+    escreval("Voce n√£o tem o limite suficiente, seu limite √© de R$" ,limite)
 fimse
 fimalgoritmo
